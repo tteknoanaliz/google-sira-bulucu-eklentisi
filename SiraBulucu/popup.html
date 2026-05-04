@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { width: 280px; font-family: 'Segoe UI', Tahoma, sans-serif; padding: 15px; background: #121212; color: #e0e0e0; }
+    h3 { margin: 0 0 15px 0; font-size: 15px; color: #4285f4; text-align: center; }
+    .settings { background: #1e1e1e; padding: 10px; border-radius: 8px; margin-bottom: 15px; border: 1px dashed #444; }
+    input { width: 90%; padding: 8px; border-radius: 5px; border: 1px solid #333; background: #121212; color: white; font-size: 12px; margin-bottom: 8px; outline: none; }
+    button { width: 100%; padding: 8px; background: #4285f4; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.3s; }
+    button:hover { background: #357abd; }
+    
+    /* Yeni Bildirim Yazısı Stili */
+    #statusMsg { font-size: 11px; text-align: center; color: #00e676; margin-top: 8px; height: 15px; font-weight: bold; }
+
+    .card { background: #1e1e1e; border-radius: 10px; padding: 12px; border-top: 3px solid #4285f4; }
+    .stat { display: flex; justify-content: space-between; margin: 8px 0; font-size: 14px; border-bottom: 1px solid #333; padding-bottom: 5px; }
+    .val { font-weight: bold; }
+    .found { color: #00e676; }
+    .not-found { color: #ff5252; }
+    .info { font-size: 10px; color: #777; text-align: center; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h3>Sıra Bulucu Ayarları</h3>
+  
+  <div class="settings">
+    <input type="text" id="siteInput" placeholder="Örn: rakipsite.com">
+    <button id="saveBtn">Hedefi Güncelle</button>
+    <div id="statusMsg"></div> </div>
+
+  <div id="display" class="card">
+    <div class="stat"><span>🎯 Hedef:</span> <span id="currentSite" class="val" style="color:#4285f4">-</span></div>
+    <div class="stat"><span>📍 Sayfa:</span> <span id="page" class="val">-</span></div>
+    <div class="stat"><span>📊 Sıra:</span> <span id="rank" class="val">-</span></div>
+    <div class="info" id="time">Veri bekleniyor...</div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
