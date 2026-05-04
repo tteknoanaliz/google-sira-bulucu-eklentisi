@@ -54,7 +54,7 @@ async function runDeepScan() {
     
     const btn = document.getElementById("deepScanBtn");
     const resultBox = document.getElementById("deepResult");
-    const target = (await chrome.storage.local.get(['targetSite'])).targetSite || "teknoanaliz.com.tr";
+    const target = (await chrome.storage.local.get(['targetSite'])).targetSite || "siteniz.com";
     const query = new URLSearchParams(window.location.search).get("q");
 
     btn.innerText = "⏳ Tarama Yapılıyor...";
