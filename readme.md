@@ -5,7 +5,7 @@ Bu Chrome eklentisi, belirlediğiniz web sitesinin Google arama sonuçlarında k
 * **Anlık Takip:** Google araması yaptığınızda sağ tarafta otomatik panel açılır.
 * **Derin Tarama:** Tek tıkla ilk 5 sayfayı arka planda tarar.
 * **Özel Hedef:** Eklenti ayarlarından istediğiniz domaini takip edebilirsiniz.
-* **Modern Arayüz:** Karanlık mod destekli, animasyonlu panel.
+* **Modern Arayüz:** Animasyonlu açılıp kapanabilir panel.
 
 ### 🛠 Kurulum
 1. Bu repoyu indirin (ZIP olarak).
